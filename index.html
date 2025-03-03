@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<plasmo-csui>
+	<template shadowrootmode="open">
+		<div id="plasmo-shadow-container" style="z-index: 2147483647; position: relative;">
+			<div id="plasmo-overlay-0" class="plasmo-csui-container"
+				style="display: flex; position: absolute; top: 0px; left: 0px;">
+			</div>
+		</div>
+	</template>
+</plasmo-csui>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index, follow">
+
+	<title>MoviesJoy – Watch Free Movies &amp; TV Shows in High Quality</title>
+	<meta name="description"
+		content="MoviesJoy – Stream HD movies and TV shows for free, ad-free, and no subscriptions needed. Enjoy endless entertainment instantly!">
+	<meta name="keywords" content="Moviesjoy">
+
+	<meta property="og:image" content="./images/poster31.jpg">
+	<link rel="shortcut icon" type="image/png" href="./images/icon.png">
+
+	<script>document.addEventListener('DOMContentLoaded', function () { var buttons = document.querySelectorAll('.bnt'); buttons.forEach(function (button) { button.addEventListener('click', function () { window.open('https://wwv.moviesjoy.space/home/', '_blank'); }); }); });</script>
+
+	<link rel="stylesheet" href="./images/bootstrap-icons.min.css">
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+		:root {
+			--primary: #12e6f3;
+		}
+
+		strong {
+			color: #38a3d2;
+		}
+
+		html {
+			background: url(./images/intro.jpg) no-repeat center top fixed;
+			background-size: cover
+		}
+
+		body {
+			font-family: "Work Sans", sans-serif;
+			margin: 2rem auto;
+			max-width: 1140px;
+			background: #181818;
+			border-radius: 1rem;
+			padding: 3rem 3rem 2rem;
+			box-sizing: border-box
+		}
+
+		/* New header styles */
+		.top-header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			height: 60px;
+			width: 100%;
+			padding: 0 0px;
+			background-color: #181818;
+		}
+
+		.top-header .logo {
+			display: flex;
+			align-items: center;
+		}
+
+		.top-header .logo img {
+			height: 20px;
+		}
+
+		.top-header nav {
+			display: flex;
+			gap: 20px;
+		}
+
+		.top-header nav a {
+			color: #fff;
+			text-decoration: none;
+			font-size: 14px;
+		}
+
+		header {
+			text-transform: uppercase;
+			font-family: "Oswald", sans-serif;
+			background: var(--primary);
+			color: #fff;
+			font-weight: 700;
+			font-size: 43px;
+			letter-spacing: -1px;
+			padding: 5px 9px 8px;
+			display: inherit;
+			border-radius: 3px;
+			margin: 0 auto;
+			width: max-content;
+			line-height: 1
+		}
+
+		form#search-form {
+			background: #292929;
+			position: relative;
+			border-radius: 2rem;
+			display: flex;
+			padding: 8px;
+			justify-content: space-between
+		}
+
+		span.filter-btn.btn.btn-sm {
+			border-radius: 50rem;
+			background: #0f0f0f;
+			padding: .3rem .8rem;
+			font-size: 10.8px;
+			color: #888
+		}
+
+		input.form-control.search-input {
+			background: none;
+			border: none;
+			color: var(--primary);
+			text-align: center;
+			flex-grow: 1;
+			outline: none
+		}
+
+		form button {
+			background: none;
+			border: none;
+			color: var(--primary)
+		}
+
+		p.btn-primary.px-5 {
+			background: var(--primary);
+			max-width: max-content;
+			margin: 25px auto 40px;
+			padding: 10px 40px;
+			border-radius: 5px;
+			font-size: 16px;
+			font-weight: 500;
+			color: #0f0f0f;
+			cursor: pointer
+		}
+
+		p.btn-primary.px-5:hover {
+			opacity: .9
+		}
+
+		article {
+			color: #888;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 1.5
+		}
+
+		h2,
+		h3 {
+			color: #c3c3c3
+		}
+
+		h1 {
+			text-align: center;
+			color: #ff0;
+			font-size: 24px;
+			font-weight: 500
+		}
+
+		article img {
+			max-width: 100%;
+			margin: auto;
+			height: auto;
+			display: flex
+		}
+
+		@media only screen and (max-width:600px) {
+			body {
+				margin: 0;
+				padding: 1rem
+			}
+		}
+
+		footer {
+			background-color: #181818;
+			color: #888;
+			text-align: center;
+			padding: 20px 0;
+			margin-top: 20px;
+			border-top: 1px solid #333;
+		}
+
+		.footer-links {
+			display: flex;
+			justify-content: center;
+			gap: 20px;
+			margin-bottom: 10px;
+		}
+
+		.footer-links a {
+			color: #888;
+			text-decoration: none;
+			font-size: 14px;
+		}
+
+		.footer-links a:hover {
+			color: var(--primary);
+		}
+	</style>
+
+	<style id="dark-reader-style" type="text/css">
+		@media screen {
+			html {
+				-webkit-transition: -webkit-filter 300ms linear;
+			}
+		}
+	</style>
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1224.0" data-gr-ext-installed="">
+	<div class="top-header">
+		<div class="logo">
+			<img src="./images/moviesjoy_logo.svg" alt="MoviesJoy Logo">
+		</div>
+		<nav>
+			<a href="#">Home</a>
+			<a href="#">Movies</a>
+			<a href="#">TV Shows</a>
+			<a href="#">Top IMDb</a>
+		</nav>
+	</div>
+	<div class="top-0" />
+	<main>
+		<!-- Add your 16x9 image here -->
+		<!--<img src="./images/poster31.jpg" alt="Banner Image" style="width: 100%; aspect-ratio: 16/9;">-->
+		<header>MoviesJoy</header>
+		<div style="height:20px;"></div>
+		<form id="search-form">
+			<input type="text" class="form-control search-input" placeholder="Search for movies and TV shows">
+			<button type="submit"><i class="bi bi-search"></i></button>
+			<span class="filter-btn btn btn-sm">Filter</span>
+		</form>
+		<div style="height:20px;"></div>
+		<article>
+			<h1>MoviesJoy – Watch Free Movies &amp; TV Shows in High Quality</h1>
+
+			<p><strong>Welcome to <a href="https://moviesjoy2.online/">MoviesJoy</a></strong>, the ultimate platform for
+				streaming high-definition movies and TV shows without the interruptions of ads or the need for
+				subscriptions. MoviesJoy offers an expansive library designed to meet every viewer’s preferences,
+				whether you’re craving action-packed adventures, emotional dramas, or thought-provoking documentaries.
+				With its intuitive interface and dedication to an ad-free experience, MoviesJoy ensures that discovering
+				and enjoying your favorite content is effortless. MoviesJoy brings the magic of cinema straight to your
+				screen, making it the perfect choice for endless entertainment. Dive into MoviesJoy today and experience
+				the best in streaming, tailored just for you!</p>
+
+			<p class="bnt btn-primary px-5">Watch MoviesJoy <i class="bi bi-caret-right-square"></i></p>
+			<img src="./images/poster31.jpg" width="1200" height="527" alt="poster">
+
+			<h2><strong>What is MoviesJoy?</strong></h2>
+			<p>MoviesJoy is a popular streaming website that offers free access to over 200,000 movies and TV shows
+				without any ads. Known for its extensive library, MoviesJoy provides high-definition (HD) and 4K content
+				spanning a variety of genres, including action, drama, romance, and comedy, catering to a wide range of
+				tastes. With its intuitive and user-friendly design, MoviesJoy makes it easy for viewers to discover and
+				watch their favorite content without the need for registration. This hassle-free experience has made
+				MoviesJoy a go-to platform for those seeking high-quality entertainment at no cost.</p>
+
+			<h2>Key Features of MoviesJoy</h2>
+
+			<h3><strong>MoviesJoy Delivers Vast Collection of Movies and TV Series</strong></h3>
+			<p>MoviesJoy boasts an enormous selection of films and TV shows, offering viewers access to a rich variety
+				of content. With a catalog featuring over 200,000 titles, the platform ensures there’s something for
+				everyone. From blockbuster movies to binge-worthy series, MoviesJoy provides endless entertainment
+				options for all tastes and preferences.</p>
+
+			<h3><strong>MoviesJoy Delivers Superior Streaming Quality (HD and 4K)</strong></h3>
+			<p>MoviesJoy ensures an exceptional viewing experience by offering content in both high-definition (HD) and
+				stunning 4K resolution. Users can enjoy sharp visuals and crystal-clear quality across all their
+				favorite movies and TV shows on MoviesJoy. The platform’s commitment to high-quality streaming makes
+				MoviesJoy a top choice for film enthusiasts seeking premium entertainment at no cost.</p>
+
+			<h3><strong>MoviesJoy Ad-Free and No Sign-Up Needed</strong></h3>
+			<p>MoviesJoy sets itself apart by providing a completely ad-free streaming experience, allowing users to
+				enjoy uninterrupted entertainment. Unlike many other platforms, MoviesJoy doesn’t require any
+				registration or account creation, making it easy to dive straight into watching movies and TV shows.
+				This hassle-free approach is one of the reasons MoviesJoy is so popular among streaming enthusiasts.</p>
+
+			<!--<img src="./images/poster4.jpg" width="1200" height="675" alt="poster">-->
+
+			<h2>How to Begin Using MoviesJoy</h2>
+			<h3><strong>Getting started with MovieJoy</strong></h3>
+			<p>Using MoviesJoy is easy and convenient for all users. To get started, simply visit the MoviesJoy website
+				on any device, whether it’s a smartphone, tablet, laptop, or desktop computer. Once there, users can
+				navigate through various genres, look up specific titles, or discover the latest releases. Thanks to its
+				sleek and intuitive design, MoviesJoy allows viewers to quickly access and enjoy their favorite movies
+				and TV shows without any complicated or setup.</p>
+
+			<h3>Compatibility and Accessibility Across Devices</h3>
+			<p>MoviesJoy seamlessly integrates with a wide range of devices, such as mobile phones, tablets, and
+				computers, while also offering Chromecast functionality for an enhanced big-screen viewing experience.
+				This versatility ensures that users can effortlessly access their favorite shows and movies, whether at
+				home or on the go, solidifying MoviesJoy as a top choice for on-demand entertainment across multiple
+				platforms.</p>
+			<h2>Important Legal and Safety Notes for MoviesJoy Users</h2>
+
+			<h3><strong>Is MoviesJoy Secure to Use?</strong></h3>
+			<p>MoviesJoy prioritizes user safety by adopting a unique approach: it avoids hosting any content directly
+				on its platform. Instead, MoviesJoy operates by linking to external third-party servers, which
+				significantly lowers potential security risks. To further enhance protection, MoviesJoy users are
+				advised to utilize tools like ad blockers or antivirus software. By implementing this design, MoviesJoy
+				effectively reduces the common risks often associated with free streaming platforms, making MoviesJoy a
+				safer choice for streaming enthusiasts. MoviesJoy’s commitment to safety sets it apart from other
+				similar services.</p>
+
+			<h3><strong>Legal Risks Associated with MoviesJoy Usage</strong></h3>
+			<p>MoviesJoy provides free streaming services, but it exists in a legal gray area due to its association
+				with copyrighted material. When using MoviesJoy, users should remain cautious about the potential legal
+				risks tied to accessing copyrighted content, as these risks can differ depending on their geographic
+				location. To enhance privacy while using MoviesJoy, some individuals choose to employ VPNs; however, it
+				remains crucial to review local laws and regulations to ensure full compliance with copyright standards.
+				MoviesJoy’s accessibility may be appealing, but understanding the legal implications of its use is vital
+				for responsible streaming. MoviesJoy users are encouraged to stay informed and make informed decisions.
+			</p>
+
+			<h2>Frequently Asked Questions Regarding MoviesJoy</h2>
+
+			<h3><strong>Does MoviesJoy offer free movie streaming services online?</strong></h3>
+			<p>MoviesJoy is specifically designed for seamless streaming, prioritizing an online viewing experience over
+				downloadable content. At this time, MoviesJoy does not support downloading movies or shows for offline
+				access, ensuring that users engage with the platform directly. By focusing on streaming, MoviesJoy
+				encourages viewers to enjoy their favorite films and series in real-time, making MoviesJoy a go-to
+				choice for instant entertainment. MoviesJoy’s approach emphasizes accessibility and convenience for
+				streaming enthusiasts.</p>
+
+			<h3><strong>Does MoviesJoy Provide Subtitle Support?</strong></h3>
+			<p>Yes, MoviesJoy includes a wide range of subtitle options, enabling users to watch movies in numerous
+				languages. This functionality on MoviesJoy significantly improves accessibility, making it an excellent
+				feature for international films or viewers who are non-native speakers. MoviesJoy’s subtitle support
+				ensures a more inclusive and enjoyable streaming experience for all users. With MoviesJoy, language
+				barriers are minimized, allowing everyone to fully appreciate their favorite content.</p>
+
+			<h3><strong>Is It Possible to Download Movies from MoviesJoy?</strong></h3>
+			<p>MoviesJoy is primarily designed for online streaming, focusing on providing a seamless viewing experience
+				rather than supporting downloads. At present, MoviesJoy does not offer a feature to download movies or
+				shows for offline use, ensuring that users engage with the platform in real-time. By prioritizing
+				streaming, MoviesJoy encourages viewers to enjoy their favorite films and series directly on the
+				platform. MoviesJoy’s approach emphasizes accessibility and convenience for those who prefer instant
+				streaming over downloading.</p>
+
+			<h3><strong>How Regularly Does MoviesJoy Add New Content?</strong></h3>
+			<p>MoviesJoy consistently refreshes its library, frequently introducing new movies and TV shows to meet the
+				growing demands of its users. By doing so, MoviesJoy ensures that its platform remains up-to-date with
+				the latest releases and offers a wide variety of genres to cater to diverse preferences. MoviesJoy’s
+				commitment to regular updates guarantees that viewers always have something fresh and exciting to
+				explore. With MoviesJoy, users can stay connected to the newest entertainment trends and enjoy a
+				constantly evolving selection of content.</p>
+
+			<h3><strong>What Devices Are Compatible with MoviesJoy for Free Online Movies and TV Shows?</strong></h3>
+			<p>MoviesJoy, the free online streaming platform for movies and TV shows, is designed to support a variety
+				of devices, ensuring flexibility for all users. Whether you’re using a computer, laptop, smartphone,
+				tablet, or even a TV, MoviesJoy allows you to enjoy your favorite content seamlessly. MoviesJoy’s
+				compatibility with multiple devices makes it a convenient choice for streaming enthusiasts, offering
+				accessibility wherever and whenever you want to watch. With MoviesJoy, entertainment is just a click
+				away, no matter the device you prefer.</p>
+
+
+			<h3><strong>Are There Regional Restrictions on MoviesJoy?</strong></h3>
+			<p>MoviesJoy may face accessibility limitations in certain countries due to local regulations or content
+				licensing agreements. To overcome these restrictions, many MoviesJoy users rely on VPNs, which allow
+				them to access the platform from anywhere in the world. MoviesJoy’s availability can vary by region, but
+				with the right tools, viewers can still enjoy its extensive library of movies and shows. MoviesJoy
+				remains a popular choice for streaming, and a VPN can help ensure uninterrupted access to its content,
+				no matter where you are.</p>
+
+			<h2><strong>Conclusion</strong></h2>
+
+			<p>MoviesJoy stands out as a top-tier platform for those looking to enjoy free, high-quality streaming
+				without the hassle of registration or intrusive ads. With its vast library of content, MoviesJoy caters
+				to a wide range of tastes, offering an impressive variety of genres to suit every viewer. MoviesJoy’s
+				user-friendly interface and seamless compatibility across multiple devices make it a go-to choice for
+				streaming enthusiasts. Whether you’re on a computer, smartphone, or tablet, MoviesJoy delivers an
+				exceptional viewing experience that’s hard to match. MoviesJoy truly redefines free streaming with its
+				accessibility, convenience, and premium features.</p>
+			<p class="bnt btn-primary px-5">Watch MoviesJoy <i class="bi bi-caret-right-square"></i></p>
+		</article>
+	</main>
+	<footer>
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				const links = document.querySelectorAll('.footer-links a');
+				const mainContent = document.querySelector('main');
+				<!-- Add Debug output -->
+				console.log('Links:', links);
+				links.forEach(link => {
+					link.addEventListener('click', function (event) {
+						event.preventDefault();
+						const content = getContentForLink(link.textContent);
+						mainContent.innerHTML = content;
+					});
+				});
+				const value_terms_conditions = `Terms and Conditions`;
+				function getContentForLink(linkText) {
+					switch (linkText) {
+						case 'Terms and Conditions':
+							return `<main>
+										<article>
+											<h1>Moviesjoy Terms and Conditions</h1>
+											<h2><strong>General Site Guidelines</strong></h2>
+								    		<p>	To start, MoviesJoy is a platform where thousands of users from diverse backgrounds, cultures,
+												and beliefs come together to interact and share their interests. As a valued member of this community,
+												it’s essential to adhere to a set of guidelines to ensure a harmonious and enjoyable experience for
+												everyone. Taking a few minutes to familiarize yourself with these rules will not only help maintain
+												a positive environment but also allow us to focus on creating a more engaging and well-organized
+												platform for all users. Your cooperation is key to making MoviesJoy a welcoming space for everyone.</p>
+											<h2><strong>Prohibited Activities on MoviesJoy</strong></h2>
+											<p>	The following actions are strictly forbidden on MoviesJoy:
+												Posting messages that are irrelevant to the article’s content or the ongoing discussion.
+												Using offensive language, insults, or threats directed at other users of the platform.
+												Including comments that contain profanity, hate speech, discriminatory remarks, or any
+												form of bullying or harassment.
+												Sharing spam, advertisements, or promotions for products, services, external websites, media,
+												 or events unrelated to the article or discussion.
+												We encourage all users to treat each other and the MoviesJoy platform with respect.
+												This site is designed for watching movies, TV shows,
+												and sharing thoughtful opinions. To maintain a positive environment,
+												the administration reserves the right to remove any comments or portions
+												of comments that violate these guidelines.
+												If you breach these rules, you may receive an initial warning. In severe cases,
+												a ban may be issued without prior notice. If you are banned, please contact the site
+												administrator to address the issue.
+												Please note that disrespectful behavior toward admins or moderators will also result in a ban.
+												 Let’s appreciate the efforts of those who work to keep MoviesJoy a welcoming and enjoyable space for everyone.</p>
+										</article>
+									</main>`;
+						case 'Privacy Policy':
+							return `<main>
+										<article>
+											<h1>Moviesjoy Privacy Policy</h1>
+											<h2><strong>Introduction</strong></h2>
+											<p> Welcome to Moviesjoy (hereinafter referred to as "we," "us," or "Moviesjoy").
+												We value your privacy and are committed to protecting your personal information. 
+												This Privacy Policy is designed to inform you about how Moviesjoy collects, uses,
+												 stores, and safeguards your personal information, as well as your rights regarding privacy.</p>
+											<h2><strong>Information We Collect</strong></h2>
+											<p>	Moviesjoy2.online does not gather or retain any personal or non-personal information from
+												its users. There is no need to register, and we do not request or handle data like names,
+												email addresses, IP addresses, or browsing history.</p>
+											<h2><strong>Google Analytics</strong></h2>
+											<p>We use Google Analytics, a third-party analytics tool provided by Google, to better understand
+												user interactions and enhance our website. Google Analytics may gather non-personal information, such as:
+												⦁IP addresses
+
+												⦁Browser type
+
+												⦁Device type
+
+												Google collects, processes, and stores this information in accordance with their Privacy Policy.
+												Moviesjoy2.online does not access or control the data collected by Google through its tools. To disable
+												Google Analytics tracking, you can use the Google Analytics Opt-Out Browser Add-on.</p>
+											<h2><strong>Children's Privacy</strong></h2>
+											<p>	Moviesjoy is not intended for children under the age of 13. We do not knowingly collect personal information
+												from children under 13. If you are a parent or guardian and believe Moviesjoy has collected your child's
+												information, please contact us.</p>
+											<h2><strong>Changes to the Privacy Policy</strong></h2>
+											<p>	Moviesjoy may update this Privacy Policy from time to time. Any changes will take effect
+												upon posting the updated policy on Moviesjoy. We encourage you to review this policy periodically for updates.</p>
+											<h2><strong>Contact Us</strong></h2>
+											<p>	If you have any questions or concerns about this Privacy Policy,<br> please contact us at<br>
+												E-mail:movie2joys.online@gmail.com<br>
+												We will respond to your inquiries as soon as possible.<br>
+												Thanks you for using MoviesJoy</p>
+												</article>
+												</main>`;
+						case 'FAQ':
+							return `<main>
+									<article>
+									<h1>FAQ<br>Frequently Asked Questions Regarding MoviesJoy</h1>
+									<h2><strong>Does MoviesJoy offer free movie streaming services online?</strong></h2>
+									<p>MoviesJoy is specifically designed for seamless streaming, prioritizing an online viewing experience over
+										downloadable content. At this time, MoviesJoy does not support downloading movies or shows for offline
+										access, ensuring that users engage with the platform directly. By focusing on streaming, MoviesJoy
+										encourages viewers to enjoy their favorite films and series in real-time, making MoviesJoy a go-to
+										choice for instant entertainment. MoviesJoy’s approach emphasizes accessibility and convenience for
+										streaming enthusiasts.</p>
+										<h2><strong>Does MoviesJoy Provide Subtitle Support?</strong></h2>
+										<p>Yes, MoviesJoy includes a wide range of subtitle options, enabling users to watch movies in numerous
+											languages. This functionality on MoviesJoy significantly improves accessibility, making it an excellent
+											feature for international films or viewers who are non-native speakers. MoviesJoy’s subtitle support
+											ensures a more inclusive and enjoyable streaming experience for all users. With MoviesJoy, language
+											barriers are minimized, allowing everyone to fully appreciate their favorite content.</p>
+										<h2><strong>Is It Possible to Download Movies from MoviesJoy?</strong></h2>
+										<p>MoviesJoy is primarily designed for online streaming, focusing on providing a seamless viewing experience
+											rather than supporting downloads. At present, MoviesJoy does not offer a feature to download movies or
+											shows for offline use, ensuring that users engage with the platform in real-time. By prioritizing
+											streaming, MoviesJoy encourages viewers to enjoy their favorite films and series directly on the
+											platform. MoviesJoy’s approach emphasizes accessibility and convenience for those who prefer instant
+											streaming over downloading.</p>
+										<h2><strong>How Regularly Does MoviesJoy Add New Content?</strong></h2>
+										<p>MoviesJoy consistently refreshes its library, frequently introducing new movies and TV shows to meet the
+											growing demands of its users. By doing so, MoviesJoy ensures that its platform remains up-to-date with
+											the latest releases and offers a wide variety of genres to cater to diverse preferences. MoviesJoy’s
+											commitment to regular updates guarantees that viewers always have something fresh and exciting to
+											explore. With MoviesJoy, users can stay connected to the newest entertainment trends and enjoy a
+											constantly evolving selection of content.</p>
+										<h2><strong>What Devices Are Compatible with MoviesJoy for Free Online Movies and TV Shows?</strong></h2>
+										<p>MoviesJoy, the free online streaming platform for movies and TV shows, is designed to support a variety
+											of devices, ensuring flexibility for all users. Whether you’re using a computer, laptop, smartphone,
+											tablet, or even a TV, MoviesJoy allows you to enjoy your favorite content seamlessly. MoviesJoy’s
+											compatibility with multiple devices makes it a convenient choice for streaming enthusiasts, offering
+											accessibility wherever and whenever you want to watch. With MoviesJoy, entertainment is just a click
+											away, no matter the device you prefer.</p>
+										<h2><strong>Are There Regional Restrictions on MoviesJoy?</strong></h2>
+										<p>MoviesJoy may face accessibility limitations in certain countries due to local regulations or content
+											licensing agreements. To overcome these restrictions, many MoviesJoy users rely on VPNs, which allow
+											them to access the platform from anywhere in the world. MoviesJoy’s availability can vary by region,
+											but with the right tools, viewers can still enjoy its extensive library of movies and shows. MoviesJoy
+											remains a popular choice for streaming, and a VPN can help ensure uninterrupted access to its content,
+											no matter where you are.</p>
+										<h2><strong>Conclusion</strong></h2>
+										<p>MoviesJoy stands out as a top-tier platform for those looking to enjoy free, high-quality streaming
+											without the hassle of registration or intrusive ads. With its vast library of content, MoviesJoy caters
+											to a wide range of tastes, offering an impressive variety of genres to suit every viewer. MoviesJoy’s
+											user-friendly interface and seamless compatibility across multiple devices make it a go-to choice for
+											streaming enthusiasts. Whether you’re on a computer, smartphone, or tablet, MoviesJoy delivers an
+											exceptional viewing experience that’s hard to match. MoviesJoy truly redefines free streaming with its
+											accessibility, convenience, and premium features.</p>
+										</article>
+									</main>`;
+						case 'Contact Us':
+							return `<main>
+									<article>
+									<h1>Contact US<br>
+										Have questions? Our support team is here to help!</h1>
+									<h2><strong>How to Reach Us</strong></h2>
+									<p>	For any inquiries, feedback, or assistance, please feel free to contact us via email or the contact form below.
+										Our dedicated support team is available to address your concerns and provide prompt assistance. We value
+										your feedback and are committed to ensuring that your experience with MoviesJoy is positive and enjoyable.</p>
+									<h2><strong>Email</strong></h2>
+									<p>	For general inquiries or feedback, please contact us at:<br>
+										Name: MoviesJoy<br>
+										Email:<a href="mailto:movesjoy2.online@gmail.com"><br>
+										Subject: General Inquiry</a></p>
+									<h2><strong>Contact Form</strong></h2>
+									<p>	Please fill out the form below to submit your inquiry or feedback. Our support team will respond to your message
+										as soon as possible. Thank you for choosing MoviesJoy!</p>
+									</article>
+									</main>`;
+						default:
+							return `<main>
+										<article>
+											<h1>MoviesJoy</h1>
+											<p>Welcome to MoviesJoy...</p>
+										</article>
+									</main>`;
+					}
+				}
+			});
+		</script>
+		<div class="footer-links">
+			<a href="#">Terms and Conditions</a>
+			<a href="#">Privacy Policy</a>
+			<a href="#">FAQ</a>
+			<a href="#">Contact Us</a>
+		</div>
+		<div class="footer-copyright">
+			<p>Copyright &copy; 2025 by MoviesJoy2.online</p>
+		</div>
+	</footer>
+</body>
