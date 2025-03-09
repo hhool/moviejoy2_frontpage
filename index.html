@@ -16,9 +16,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="robots" content="index, follow">
 
-	<title>MoviesJoy – Watch Free Movies &amp; TV Shows in High Quality</title>
+	<title>MoviesJoy – Watch high-quality movies and TV shows for free</title>
 	<meta name="description"
-		content="MoviesJoy – Stream HD movies and TV shows for free, ad-free, and no subscriptions needed. Enjoy endless entertainment instantly!">
+		content="MoviesJoy – Watch high-definition films and series at no cost, no sign-ups required. Dive into limitless on-demand content immediately—no fees, no delays, just seamless entertainment whenever you want!">
 	<meta name="keywords" content="Moviesjoy">
 
 	<meta property="og:image" content="./images/poster31.jpg">
@@ -240,7 +240,7 @@
 	<div style="height:20px;"></div>
 	<main id="first">
 		<article>
-			<h1>MoviesJoy – Watch Free Movies &amp; TV Shows in High Quality</h1>
+			<h1>MoviesJoy – Watch high-quality movies and TV shows for free</h1>
 
 			<p><strong>Welcome to <a href="https://moviesjoy2.online/">MoviesJoy</a></strong>, the ultimate platform for
 				streaming high-definition movies and TV shows without the interruptions of ads or the need for
@@ -520,7 +520,6 @@
 						accessibility, convenience, and premium features.</p>
 					<p class="bnt btn-primary px-5">Watch MoviesJoy <i class="bi bi-caret-right-square"></i></p>
 				</article>`;
-				const proxyUrl = 'https://seamanplayerproxy.netlify.app/';
 				const targetUrl = 'https://mj.moviesjoy2.online/';
 				logo.addEventListener('click', function () {
 					event.preventDefault();
@@ -538,8 +537,7 @@
 						} else if (linkText === 'Top IMDb') {
 							window.open('https://mj.moviesjoy2.online/?top_imdb', '_blank');
 						} else {
-							const content = getContentForLink(linkText);
-							mainContent.innerHTML = content;
+							mainContent.innerHTML = defaultContent;
 						}
 					});
 				});
@@ -547,160 +545,37 @@
 					event.preventDefault();
 					window.open('https://mj.moviesjoy2.online/?movie', '_blank');
 				});
-				function getContentForLink(linkText) {
-					switch (linkText) {
-						case 'Terms and Conditions':
-							return `<main>
-								<article>
-									<h1>Moviesjoy Terms and Conditions</h1>
-									<h2><strong>General Site Guidelines</strong></h2>
-									<p>To start, MoviesJoy is a platform where thousands of users from diverse backgrounds, cultures,
-									and beliefs come together to interact and share their interests. As a valued member of this community,
-									it’s essential to adhere to a set of guidelines to ensure a harmonious and enjoyable experience for
-									everyone. Taking a few minutes to familiarize yourself with these rules will not only help maintain
-									a positive environment but also allow us to focus on creating a more engaging and well-organized
-									platform for all users. Your cooperation is key to making MoviesJoy a welcoming space for everyone.</p>
-									<h2><strong>Prohibited Activities on MoviesJoy</strong></h2>
-									<p>The following actions are strictly forbidden on MoviesJoy:
-									Posting messages that are irrelevant to the article’s content or the ongoing discussion.
-									Using offensive language, insults, or threats directed at other users of the platform.
-									Including comments that contain profanity, hate speech, discriminatory remarks, or any
-									form of bullying or harassment.
-									Sharing spam, advertisements, or promotions for products, services, external websites, media,
-									or events unrelated to the article or discussion.
-									We encourage all users to treat each other and the MoviesJoy platform with respect.
-									This site is designed for watching movies, TV shows,
-									and sharing thoughtful opinions. To maintain a positive environment,
-									the administration reserves the right to remove any comments or portions
-									of comments that violate these guidelines.
-									If you breach these rules, you may receive an initial warning. In severe cases,
-									a ban may be issued without prior notice. If you are banned, please contact the site
-									administrator to address the issue.
-									Please note that disrespectful behavior toward admins or moderators will also result in a ban.
-									Let’s appreciate the efforts of those who work to keep MoviesJoy a welcoming and enjoyable space for everyone.</p>
-								</article>
-							</main>`;
-						case 'Privacy Policy':
-							return `<main>
-								<article>
-									<h1>Moviesjoy Privacy Policy</h1>
-									<h2><strong>Introduction</strong></h2>
-									<p>Welcome to Moviesjoy (hereinafter referred to as "we," "us," or "Moviesjoy").
-									We value your privacy and are committed to protecting your personal information. 
-									This Privacy Policy is designed to inform you about how Moviesjoy collects, uses,
-									stores, and safeguards your personal information, as well as your rights regarding privacy.</p>
-									<h2><strong>Information We Collect</strong></h2>
-									<p>Moviesjoy2.online does not gather or retain any personal or non-personal information from
-									its users. There is no need to register, and we do not request or handle data like names,
-									email addresses, IP addresses, or browsing history.</p>
-									<h2><strong>Google Analytics</strong></h2>
-									<p>We use Google Analytics, a third-party analytics tool provided by Google, to better understand
-									user interactions and enhance our website. Google Analytics may gather non-personal information, such as:
-									IP addresses, Browser type, Device type. Google collects, processes, and stores this information in accordance with their Privacy Policy.
-									Moviesjoy2.online does not access or control the data collected by Google through its tools. To disable
-									Google Analytics tracking, you can use the Google Analytics Opt-Out Browser Add-on.</p>
-									<h2><strong>Children's Privacy</strong></h2>
-									<p>Moviesjoy is not intended for children under the age of 13. We do not knowingly collect personal information
-									from children under 13. If you are a parent or guardian and believe Moviesjoy has collected your child's
-									information, please contact us.</p>
-									<h2><strong>Changes to the Privacy Policy</strong></h2>
-									<p>Moviesjoy may update this Privacy Policy from time to time. Any changes will take effect
-									upon posting the updated policy on Moviesjoy. We encourage you to review this policy periodically for updates.</p>
-									<h2><strong>Contact Us</strong></h2>
-									<p>If you have any questions or concerns about this Privacy Policy, please contact us at
-									E-mail: movie2joys.online@gmail.com. We will respond to your inquiries as soon as possible.
-									Thank you for using MoviesJoy.</p>
-								</article>
-							</main>`;
-						case 'FAQ':
-							return `<main>
-								<article>
-									<h1>FAQ<br>Frequently Asked Questions Regarding MoviesJoy</h1>
-									<h2><strong>Does MoviesJoy offer free movie streaming services online?</strong></h2>
-									<p>MoviesJoy is specifically designed for seamless streaming, prioritizing an online viewing experience over
-									downloadable content. At this time, MoviesJoy does not support downloading movies or shows for offline
-									access, ensuring that users engage with the platform directly. By focusing on streaming, MoviesJoy
-									encourages viewers to enjoy their favorite films and series in real-time, making MoviesJoy a go-to
-									choice for instant entertainment. MoviesJoy’s approach emphasizes accessibility and convenience for
-									streaming enthusiasts.</p>
-									<h2><strong>Does MoviesJoy Provide Subtitle Support?</strong></h2>
-									<p>Yes, MoviesJoy includes a wide range of subtitle options, enabling users to watch movies in numerous
-									languages. This functionality on MoviesJoy significantly improves accessibility, making it an excellent
-									feature for international films or viewers who are non-native speakers. MoviesJoy’s subtitle support
-									ensures a more inclusive and enjoyable streaming experience for all users. With MoviesJoy, language
-									barriers are minimized, allowing everyone to fully appreciate their favorite content.</p>
-									<h2><strong>Is It Possible to Download Movies from MoviesJoy?</strong></h2>
-									<p>MoviesJoy is primarily designed for online streaming, focusing on providing a seamless viewing experience
-									rather than supporting downloads. At present, MoviesJoy does not offer a feature to download movies or
-									shows for offline use, ensuring that users engage with the platform in real-time. By prioritizing
-									streaming, MoviesJoy encourages viewers to enjoy their favorite films and series directly on the
-									platform. MoviesJoy’s approach emphasizes accessibility and convenience for those who prefer instant
-									streaming over downloading.</p>
-									<h2><strong>How Regularly Does MoviesJoy Add New Content?</strong></h2>
-									<p>MoviesJoy consistently refreshes its library, frequently introducing new movies and TV shows to meet the
-									growing demands of its users. By doing so, MoviesJoy ensures that its platform remains up-to-date with
-									the latest releases and offers a wide variety of genres to cater to diverse preferences. MoviesJoy’s
-									commitment to regular updates guarantees that viewers always have something fresh and exciting to
-									explore. With MoviesJoy, users can stay connected to the newest entertainment trends and enjoy a
-									constantly evolving selection of content.</p>
-									<h2><strong>What Devices Are Compatible with MoviesJoy for Free Online Movies and TV Shows?</strong></h2>
-									<p>MoviesJoy, the free online streaming platform for movies and TV shows, is designed to support a variety
-									of devices, ensuring flexibility for all users. Whether you’re using a computer, laptop, smartphone,
-									tablet, or even a TV, MoviesJoy allows you to enjoy your favorite content seamlessly. MoviesJoy’s
-									compatibility with multiple devices makes it a convenient choice for streaming enthusiasts, offering
-									accessibility wherever and whenever you want to watch. With MoviesJoy, entertainment is just a click
-									away, no matter the device you prefer.</p>
-									<h2><strong>Are There Regional Restrictions on MoviesJoy?</strong></h2>
-									<p>MoviesJoy may face accessibility limitations in certain countries due to local regulations or content
-									licensing agreements. To overcome these restrictions, many MoviesJoy users rely on VPNs, which allow
-									them to access the platform from anywhere in the world. MoviesJoy’s availability can vary by region,
-									but with the right tools, viewers can still enjoy its extensive library of movies and shows. MoviesJoy
-									remains a popular choice for streaming, and a VPN can help ensure uninterrupted access to its content,
-									no matter where you are.</p>
-									<h2><strong>Conclusion</strong></h2>
-									<p>MoviesJoy stands out as a top-tier platform for those looking to enjoy free, high-quality streaming
-									without the hassle of registration or intrusive ads. With its vast library of content, MoviesJoy caters
-									to a wide range of tastes, offering an impressive variety of genres to suit every viewer. MoviesJoy’s
-									user-friendly interface and seamless compatibility across multiple devices make it a go-to choice for
-									streaming enthusiasts. Whether you’re on a computer, smartphone, or tablet, MoviesJoy delivers an
-									exceptional viewing experience that’s hard to match. MoviesJoy truly redefines free streaming with its
-									accessibility, convenience, and premium features.</p>
-								</article>
-							</main>`;
-						case 'Contact Us':
-							return `<main>
-								<article>
-									<h1>Contact Us<br>Have questions? Our support team is here to help!</h1>
-									<h2><strong>How to Reach Us</strong></h2>
-									<p>For any inquiries, feedback, or assistance, please feel free to contact us via email or the contact form below.
-									Our dedicated support team is available to address your concerns and provide prompt assistance. We value
-									your feedback and are committed to ensuring that your experience with MoviesJoy is positive and enjoyable.</p>
-									<h2><strong>Email</strong></h2>
-									<p>For general inquiries or feedback, please contact us at:<br>
-									Name: MoviesJoy<br>
-									Email: <a href="mailto:movesjoy2.online@gmail.com">movesjoy2.online@gmail.com</a><br>
-									Subject: General Inquiry</p>
-									<h2><strong>Contact Form</strong></h2>
-									<p>Please fill out the form below to submit your inquiry or feedback. Our support team will respond to your message
-									as soon as possible. Thank you for choosing MoviesJoy!</p>
-								</article>
-							</main>`;
-						default:
-							return `<main>
-								<article>
-									<h1>MoviesJoy</h1>
-									<p>Welcome to MoviesJoy...</p>
-								</article>
-							</main>`;
-					}
+				function loadContent(page) {
+					fetch(page)
+						.then(response => response.text())
+						.then(data => {
+							mainContent.innerHTML = data;
+						})
+						.catch(error => console.error('Error loading content:', error));
 				}
+
+				links.forEach(link => {
+					link.addEventListener('click', function (event) {
+						event.preventDefault();
+						const page = link.getAttribute('data-page');
+						console.log('Page:', page);
+						if (page === 'index.html') {
+							mainContent.innerHTML = defaultContent;
+						} else if (page === 'Terms_and_Conditions.html' || page === 'Privacy_Policy.html' || page === 'FAQ.html' || page === 'Contact_Us.html') {
+							loadContent(page);
+						}
+					});
+				});
+				// Load default content on page load
+				mainContent.innerHTML = defaultContent;
 			});
 		</script>
 		<div class="footer-links">
-			<a href="#">Terms and Conditions</a>
-			<a href="#">Privacy Policy</a>
-			<a href="#">FAQ</a>
-			<a href="#">Contact Us</a>
+			<a href="#" data-page="index.html">Home</a>
+			<a href="#" data-page="Terms_and_Conditions.html">Terms and Conditions</a>
+			<a href="#" data-page="Privacy_Policy.html">Privacy Policy</a>
+			<a href="#" data-page="FAQ.html">FAQ</a>
+			<a href="#" data-page="Contact_Us.html">Contact Us</a>
 		</div>
 		<div class="footer-copyright">
 			<p>Copyright &copy; 2025 by MoviesJoy2.online</p>
